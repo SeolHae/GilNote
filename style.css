@@ -1,3 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
 body {
     background-color: whitesmoke;
+}
+
+.center_align{
+    margin: 0 auto;
+    width: 1080px; 
+    /* pixel : 상대적인 길이 */
+}
+.relative{
+    position: relative;
+}
+header {
+    height : 70px;
+}
+
+header h1 {
+    margin: 6px 0;
+    font-size: 50px;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    left: 176px; 
+        
+
+}
+header fieldset {
+    margin: 6px 0;
+    padding: 5px;
+    border: 2px solid lightgray;
+    display: inline-block;
+    width: 500px;
+    height: 44px;
+    position: relative;
+    left: 386px;
+
+} 
+header fieldset input {
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    vertical-align: top;
+    width: 451px;
+    height: 44px;
+    position: absolute;
+    
+
+}
+header fieldset button {
+    height: 44px;
+    width: 44px;
+    padding: 0;
+    position: absolute;
+    right: 5px;
+
 }
