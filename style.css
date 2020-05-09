@@ -1,23 +1,24 @@
-html, body {
-    height: 100%;
-
+ html, body {
     font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    height: 100%;
+    margin: 0;
 }
 body {
-    margin: 0;
     background-color: whitesmoke;
 }
 
 header {
-    position: absolute;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 10%;
+    min-height: 100px;
     background-color: white;
+    
 }
 .search-wrapper {
     position: relative;
+    margin: 0 auto;
+
 }
 h1 {
     margin: 0;
@@ -27,7 +28,9 @@ h1 {
     font-style: italic;
     
     position: absolute;
-    left: 25%;
+    left: 150px;
+    top: 20px;
+
     
 }
 fieldset {
@@ -37,55 +40,24 @@ fieldset {
     display: inline-block;
 
     height: 54px;
-    width: 35%;
-    border-width: 2px;
-
+    width: 250px;
+    border: none;
+    border-bottom: 2px solid slategray;
+    
     position: absolute;
-    left: 50px;
-    right: 0;
+    left: 350px;
+    top: 20px;
 }
+fieldset input {
+    height: 32px;
+    width: 250px;
 
-/* header h1 {
-    margin: 6px 0;
-    font-size: 50px;
-    text-align: center;
-    width: 200px;
-    display: inline-block;
-    position: absolute;
-    left: 176px; 
-        
-
-}
-header fieldset {
-    margin: 6px 0;
-    padding: 5px;
-    border: 2px solid skyblue;
-    display: inline-block;
-    width: 500px;
-    height: 44px;
-    position: relative;
-    left: 386px;
-
-} 
-header fieldset input {
-    padding: 0;
     border: none;
     outline: none;
-    font-size: 30px;
-    vertical-align: top;
-    width: 451px;
-    height: 44px;
-    position: absolute;
+    
+    font-size: 20px;
+    padding: 20px 5px 0 5px;    
 }
-header fieldset button {
-    cursor: pointer;
-    height: 44px;
-    width: 44px;
-    padding: 0;
-    position: absolute;
-    right: 5px;
-
-} */
 
 .memo-wrapper {
     position:absolute;
@@ -94,61 +66,65 @@ header fieldset button {
     width:100%;
     height:90%;
 }
-
 .memo-area {
     position:absolute;
     top:0;
     left:0;
-    right:25%;
-    bottom:50%;
-    background-color:red;
+    width: 25%;
+    height: 50%;
+    background-color:#00a8ff;
+    border: none;
+
+    font-size: 20px;  
+    color: white;
+    
 }
 .memo-area:nth-of-type(2) {
     top:0;
     left:25%;
-    right:0;
-    bottom:50%;
-    background-color:orange;
+    width: 25%;
+    height: 50%;
+    background-color: #9c88ff;
 }
 .memo-area:nth-of-type(3) {
     top:0;
     left:50%;
-    right:0;
-    bottom:50%;
-    background-color:yellow;
+    width: 25%;
+    height: 50%;
+    background-color:#fbc531;
 }
 .memo-area:nth-of-type(4) {
     top:0;
     left:75%;
-    right:0;
-    bottom:50%;
-    background-color:green;
+    width: 25%;
+    height: 50%;
+    background-color:#4cd137;
 }
 .memo-area:nth-of-type(5) {
     top:50%;
     left:0;
-    right:25%;
-    bottom:0;
-    background-color:blue;
+    width: 25%;
+    height: 50%;
+    background-color:#e84118;
 }
 .memo-area:nth-of-type(6) {
     top:50%;
     left:25%;
-    right:25%;
-    bottom:0;
-    background-color:darkblue;
+    width: 25%;
+    height: 50%;
+    background-color:#f5f6fa;
 }
 .memo-area:nth-of-type(7) {
     top:50%;
     left:50%;
-    right:25%;
-    bottom:0;
-    background-color:purple;
+    width: 25%;
+    height: 50%;
+    background-color:#7f8fa6;
 }
 .memo-area:nth-of-type(8) {
     top:50%;
     left:75%;
-    right:0%;
-    bottom:0;
-    background-color:black;
+    width: 25%;
+    height: 50%;
+    background-color:#273c75;
 }
